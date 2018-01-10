@@ -27,24 +27,15 @@ public class Permutations {
 
         result.add(new ArrayList<Integer>());
         for(int i =0; i < A.size(); i++){
-            //System.out.println("For i : " + i);
             ArrayList<ArrayList<Integer>> current = new ArrayList<ArrayList<Integer>>();
 
             for(ArrayList<Integer> l : result){
 
                 for(int j =0; j < l.size() + 1; j++){
-                  //  System.out.println("For J : " +  j);
-                   // System.out.println("list is: " + l);
 
                     l.add(j, A.get(i));
                     ArrayList<Integer> temp = new ArrayList<Integer>(l);
                     current.add(temp);
-                   // System.out.println("\t current: " );
-                    //for(int k = 0; k< current.size(); k++)
-                        ///System.out.println("\t \t" + current.get(k));
-
-                  //  System.out.println("\t Temp: " + temp);
-
 
                     l.remove(j);
                 }
@@ -68,6 +59,7 @@ public class Permutations {
         }
     }
 
+    // From solution
     ArrayList<ArrayList<Integer>> result;
     ArrayList<Integer> permutation,a;
 
