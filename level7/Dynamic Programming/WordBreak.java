@@ -14,7 +14,6 @@ Return 0 / 1 ( 0 for false, 1 for true ) for this problem
 
 See Expected Output
 */
-
 public class WordBreak {
     public int wordbreak(String A, ArrayList<String> B){
         boolean[] t = new boolean[A.length() + 1];
@@ -48,8 +47,6 @@ public class WordBreak {
         String a = "catsanddog";
         System.out.println("List is : " + b);
         System.out.println("String is  : " + a);
-
-
         System.out.println(new WordBreak().wordbreak(a, b));
 
     }
