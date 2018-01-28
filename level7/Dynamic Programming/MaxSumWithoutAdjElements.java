@@ -13,7 +13,8 @@ so we will choose
 3 and 5 so sum will be 3 + 5 = 8
 
 
-Note that you can choose more than 2 numbers*/
+Note that you can choose more than 2 numbers
+*/
 public class MaxSumWithoutAdjElements {
     public int adjacent(ArrayList<ArrayList<Integer>> A) {
         if(A == null || A.size() == 0)
